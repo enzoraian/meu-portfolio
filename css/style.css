@@ -26,7 +26,7 @@ img {
   --dark-200: #151515;
   --light: #FFFFFF;
   --gray-light: #C4C4C4;
-  --blue: #00D2DF;
+  --green: #009360;
   --gradient-pink: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%);
   --gradient-purple: linear-gradient(269.96deg, #10D7E2 0%, #9358F7 100%);
 }
@@ -49,6 +49,13 @@ header {
   height: 9rem;
   display: flex;
   align-items: center;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
 }
 
 header .container {
@@ -93,14 +100,18 @@ nav ul li:not(li:last-child) {
 
 nav .menu-link:link, nav .menu-link:visited {
   color: var(--gray-light);
+  transition: all 0.2s;
 }
 
-nav .menu-link:hover, nav .menu-link:active {}
+nav .menu-link:hover, nav .menu-link:active {
+  color: var(--green);
+}
 
 /*******************/
 /***SECTION HERO***/
 /*****************/
 .section-hero {
+  margin-top: 9rem;
   background: var(--dark-200);
 }
 
@@ -124,7 +135,7 @@ nav .menu-link:hover, nav .menu-link:active {}
 }
 
 .section-hero .container .text .title h1 {
-  color: var(--blue);
+  color: var(--green);
   font-size: 6.4rem;
   font-weight: 600;
   line-height: 7.7rem;
@@ -161,7 +172,7 @@ nav .menu-link:hover, nav .menu-link:active {}
 }
 
 .section-hero .container .contacts .btn:hover {
-  background: var(--blue);
+  background: var(--green);
 }
 
 .section-hero .container .text .contacts img {
@@ -171,6 +182,8 @@ nav .menu-link:hover, nav .menu-link:active {}
 
 .section-hero .container .image {
   width: 50%;
+  position: relative;
+  top: 1rem;
 }
 
 /********************/
@@ -178,7 +191,7 @@ nav .menu-link:hover, nav .menu-link:active {}
 /*******************/
 .section-skills {
   background: var(--dark);
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .section-skills h2 {
@@ -204,6 +217,12 @@ nav .menu-link:hover, nav .menu-link:active {}
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.3s;
+}
+
+.section-skills .skills .skill:hover {
+  background: var(--light);
 }
 
 .section-skills .skills .skill img {
@@ -216,7 +235,7 @@ nav .menu-link:hover, nav .menu-link:active {}
 /*********************/
 .section-projects {
   background: var(--dark);
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .section-projects h2 {
@@ -242,6 +261,7 @@ nav .menu-link:hover, nav .menu-link:active {}
   max-width: 35rem;
   height: 24rem;
   padding: 2rem;
+  border-radius: 0.2rem;
 }
 
 .section-projects .projects .project .image {
@@ -311,7 +331,7 @@ footer p {
 
 @media (max-width: 768px) {
   .section-hero {
-    padding: 7rem 0;
+    padding: 6rem 0 0 0;
   }
 
   .section-hero .container {
@@ -369,7 +389,7 @@ footer p {
 @media (max-width: 480px) {
 
   .section-hero {
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
   }
 
   html {
