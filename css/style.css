@@ -169,91 +169,52 @@ nav .menu-link:hover, nav .menu-link:active {}
 
 /********************/
 /***SECTION SKILLS***/
-/********************/
+/*******************/
 .section-skills {
   background: var(--dark);
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .section-skills h2 {
   color: var(--light);
   font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.2rem;
   text-align: center;
   margin-bottom: 3rem;
-
 }
 
 .section-skills .skills {
   width: 100%;
   display: flex;
-  gap: 5.1rem;
+  gap: 3rem;
 }
 
-.section-skills .icon {
+.section-skills .skills .skill {
   background: var(--dark-200);
-  padding: 3.5rem;
+  width: 15rem;
+  height: 15rem;
 
-  transition: all ease 0.4s;
-}
-
-.section-skills .icon:hover {
-  background: white;
-}
-
-
-.section-skills .icon img {
-
-  width: 7rem;
-  height: 7rem;
-}
-
-/***********************/
-/***SECTION PROJETOS***/
-/**********************/
-.section-projects {
-  background: var(--dark);
-}
-
-.section-projects h3 {
-  color: var(--light);
-  font-size: 3.2rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.section-projects .projects {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.section-projects .projects .project {
-  background: var(--dark-200);
-  padding: 2rem 2.5rem;
-}
+/**********************/
+/***SECTION PROJECTS***/
+/*********************/
 
 
-.section-projects .projects .project img {
-  max-width: 30rem;
-  height: 13rem;
-  margin-bottom: 2.3rem;
+.section-skills .skills .skill img {
+  width: 8rem;
+  height: 8rem;
 }
+
 
 /*******************/
 /***MEDIA QUERIES***/
 /******************/
-@media (max-width: 1200px) {
-  .section-skills .skills {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .section-skills .skills .icon {
-    flex: 1 1 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 991px) {
   html {
@@ -263,6 +224,12 @@ nav .menu-link:hover, nav .menu-link:active {}
   .section-hero .container .image {
     width: 50%;
   }
+
+  .section-skills .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 
 }
 
@@ -297,6 +264,7 @@ nav .menu-link:hover, nav .menu-link:active {}
   .section-hero .container .image {
     width: 80%;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -307,6 +275,7 @@ nav .menu-link:hover, nav .menu-link:active {}
   header .menu-mobile {
     display: block;
   }
+
 }
 
 @media (max-width: 480px) {
