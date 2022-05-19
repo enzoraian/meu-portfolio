@@ -27,13 +27,20 @@
             margin-left: 2rem;
             color: $white;
           }
+          transition: all 0.3s;
+          &:hover{
+            background: $green;
+          }
         }
         .github{
           span{
             margin-left: 2rem;
             color: $white
           }
-
+          transition: all 0.3s;
+          &:hover{
+            background: $green;
+          }
         }
       }
     }
@@ -157,4 +164,91 @@
   }
   @include responsive(600px){}
   @include responsive(480px){}
+}
+
+.section-projects{
+  background: $gray-color-200;
+  padding: 4rem 0;
+  .container{
+    h2{
+      color: $white;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .projects{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .image{
+        margin-bottom: 1.6rem;
+      }
+      .project{
+        width: 100%;
+        max-width: 35rem;
+        height: 24rem;
+        border-radius: 0.3rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        margin: 1rem;
+        
+        background: $gray-color-100;
+        h3{
+          color: $white;
+          margin-bottom: 0.8rem;
+        }
+        p{
+          color: $white-color-text;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+  }
+  
+  @include responsive (768px){
+    .container{
+      .projects{
+        .project{
+          max-width: 90%;
+          .image{
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive (480px){
+    .container{
+      .projects{
+        .project{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background: $gray-color-800;
+  @include flex(row, center, center)
+  img{
+    width: 9.2rem;
+    height: 9.2rem;
+  }
+  p{
+    font-size: 1.8rem;
+    span{
+      font-weight: 600;
+    }
+    a:link, a:visited{
+      color: black;
+    }
+    a:hover, a:active{
+      color: $green;
+    }
+  }
 }
