@@ -1,0 +1,140 @@
+.section-hero{
+  background-color: $gray-color-200;
+  margin-top: 10rem;
+  padding: 5rem 0 0 0;
+  .container{
+    @include flex(row, center, space-between);
+    .text{
+      width: 100%;
+      max-width: 100rem;
+      h1{
+        color: $green;
+        text-transform: uppercase;
+      }
+      p{
+        color: $white;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+      }
+
+      .contacts{
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        .linkedin{
+          margin-right: 3rem;
+          span{
+            margin-left: 2rem;
+            color: $white;
+          }
+        }
+        .github{
+          span{
+            margin-left: 2rem;
+            color: $white
+          }
+
+        }
+      }
+    }
+
+    .image{
+      width: 100%;
+      position: relative;
+      top: 0.94rem;
+    }
+  }
+
+  @include responsive(1200px){}
+  @include responsive(991px){
+    .container{
+      .text{
+        h1{
+          font-size: 5rem;
+        }
+        p{
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+  @include responsive(768px){
+    .container{
+      flex-direction: column;
+
+      .text{
+        width: 100%;
+
+        h1, p{
+          text-align: center;
+        }
+
+        .contacts{
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .image{
+        text-align: center;
+        top: 0.8rem;
+        img{
+          width: 60%;
+        }
+      }
+    }
+  }
+  @include responsive(600px){}
+  @include responsive(480px){
+    .container{
+      .text{
+        .contacts{
+          margin-top: 2rem;
+          .btn-contact{
+            font-size: 1.4rem;
+            padding: 0.8rem 2.2rem;
+          }
+        }
+      }
+      .image{
+        top: 0.6rem;
+        
+      }
+    }
+  }
+}
+
+.section-skills{
+  padding: 4rem 0;
+  .container{
+    h2{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .skills{
+      display: flex;
+      justify-content: center;
+      .skill{
+        @include flex(row,center,center);
+        background: $gray-color-100;
+        border-radius: 0.3rem;
+        width: 100%;
+        max-width: 15rem;
+        height: 15rem;
+
+        margin-right: 3rem;
+
+        img{
+          max-width: 8rem;
+          height: 8rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(1200px){}
+  @include responsive(991px){}
+  @include responsive(768px){}
+  @include responsive(600px){}
+  @include responsive(480px){}
+}

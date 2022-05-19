@@ -1,70 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset=" UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https:/ /fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <!--CSS-->
-  <link rel="stylesheet" href="css/style.css">
-  <title>Portfólio - Enzo Raian</title>
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Enzo Raian - Dev Frontend</title>
 </head>
 
 <body>
-
   <!--HEADER-->
   <header>
     <div class="container">
       <!--LOGO-->
-      <div class="logo">
+      <a class="logo" href="">
         <img src="img/logo.webp" alt="">
-      </div>
+      </a>
 
-      <!--NAV-->
+      <!--MENU NAV-->
       <nav>
         <ul>
-          <li><a class="menu-link" href="#home">Home</a></li>
-          <li><a class="menu-link" href="#skills">Skills</a></li>
-          <li><a class="menu-link" href="#projects">Projetos</a></li>
-          <li><a class="menu-link" href="#">Contato</a></li>
+          <li><a class="menu-item" href="#home">Home</a></li>
+          <li><a class="menu-item" href="#skills">Skills</a></li>
+          <li><a class="menu-item" href="#projetos">Projetos</a></li>
+          <li><a class="btn-primary" href="">Currículo</a></li>
         </ul>
       </nav>
-
       <!--menu mobile-->
-      <button class="menu-mobile">Menu mobile</button>
+      <a href="" class="menu-item menu-mobile">Menu mobile</a>
     </div>
   </header>
 
   <!--SECTION HERO-->
   <section id="home" class="section-hero">
     <div class="container">
-
       <!--TEXT-->
       <div class="text">
-        <!--TITLE-->
-        <div class="title">
-          <span>Olá, eu sou</span>
-          <h1>Enzo Raian</h1>
-          <span>Desenvolvedor Front-End</span>
-        </div>
+        <p>Olá, eu sou</p>
+        <h1>Enzo Raian</h1>
+        <p>Desenvolvedor Front-end</p>
 
-        <!--CONTACTS-->
+        <!--CONTACTS: LINKEDIN, GITHUB-->
         <div class="contacts">
-
-          <a href="https://www.linkedin.com/in/enzo-raian-97a37b197/" target="_blank" class="btn">
-            <img src="img/icon-linkedin.svg" alt="">
+          <!--LINKEDIN-->
+          <a href="" class="btn-contact linkedin">
+            <img src="img/icon-linkedin.svg" alt="Linkedin logo">
             <span>Linkedin</span>
           </a>
 
-
-          <a href="https://github.com/enzoraian" target="_blank" class="btn">
-            <img src="img/icon-github.svg" alt="">
+          <!--GITHUB-->
+          <a href="" class="btn-contact github">
+            <img src="img/icon-github.svg" alt="Github logo">
             <span>Github</span>
           </a>
         </div>
@@ -77,11 +75,13 @@
     </div>
   </section>
 
-  <!--SECTION SKILLS-->
+  <!--SKILLS-->
   <section id="skills" class="section-skills">
     <div class="container">
-
+      <!--TITLE-->
       <h2>Minhas Skills</h2>
+
+      <!--SKILLS-->
       <div class="skills">
         <!--HTML-->
         <div class="skill">
@@ -91,9 +91,9 @@
         <div class="skill">
           <img src="img/icon-css.svg" alt="Skill CSS">
         </div>
-        <!--SCSS-->
+        <!--SASS-->
         <div class="skill">
-          <img src="img/icon-sass.svg" alt="Skill SCSS">
+          <img src="img/icon-sass.svg" alt="Skill SASS">
         </div>
         <!--JS-->
         <div class="skill">
@@ -107,106 +107,9 @@
         <div class="skill">
           <img src="img/icon-git.svg" alt="Skill GIT">
         </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!--SECTION PROJECTS-->
-  <section id="projects" class="section-projects">
-    <div class="container">
-      <h2>Projetos</h2>
-
-      <div class="projects">
-
-        <!--PROJECT 1-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
-
-        <!--PROJECT 2-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
-
-        <!--PROJECT 3-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
-
-        <!--PROJECT 4-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
-
-        <!--PROJECT 5-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
-
-        <!--PROJECT 6-->
-        <div class="project">
-          <!--IMAGE-->
-          <div class="image">
-            <img src="img/projeto-imagem.svg" alt="">
-          </div>
-          <!--TEXT-->
-          <div class="text">
-            <h3>Título do Projeto</h3>
-            <p>Tecnologia: HTML, CSS e JS</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-
-  <!--FOOTER-->
-  <footer>
-    <img src="img/footer-logo.webp" alt="Footer logo">
-    <p>@2022 - <strong>Enzo Raian</strong></p>
-  </footer>
 </body>
 
 </html>

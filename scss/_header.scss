@@ -1,0 +1,49 @@
+header{
+  background: $gray-color-800;
+  height: 10rem;
+
+  /*menu fixed*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .container{
+    @include flex(row, center, space-between);
+    .menu-mobile{
+      display: none;
+    }
+    .logo{
+      width: 100%;
+      max-width: 10rem;
+      height: 10rem;
+    }
+    nav{
+      ul{
+        display: flex;
+        li{
+          margin-right: 2rem;
+          &:last-child{
+            margin-right: 0;
+          }
+        } 
+      }
+    }
+  }
+
+  @include responsive(1200px){}
+  @include responsive(991px){}
+  @include responsive(768px){
+    .container{
+      .menu-mobile{
+        display: block;
+      }
+      nav{
+        display: none;
+      }
+    }
+  }
+  @include responsive(600px){}
+  @include responsive(480px){}
+}
