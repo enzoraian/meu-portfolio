@@ -112,6 +112,7 @@
       margin-bottom: 3rem;
     }
     .skills{
+      width: 100%;
       display: flex;
       justify-content: center;
       .skill{
@@ -133,8 +134,27 @@
   }
 
   @include responsive(1200px){}
-  @include responsive(991px){}
-  @include responsive(768px){}
+  @include responsive(991px){
+    .container{
+      .skills{
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .skill{
+          width: 90%;
+          max-width: 90%;
+          margin-bottom: 3rem;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(768px){
+    
+  }
   @include responsive(600px){}
   @include responsive(480px){}
 }
