@@ -122,6 +122,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      
       .skill{
         @include flex(row,center,center);
         background: $gray-color-100;
@@ -131,6 +132,9 @@
         height: 15rem;
 
         margin-right: 3rem;
+        &:last-child{
+          margin-right: 0;
+        }
 
         img{
           max-width: 8rem;
@@ -144,14 +148,13 @@
   @include responsive(991px){
     .container{
       .skills{
-        width: 100%;
-        max-width: 100%;
         flex-direction: column;
         align-items: center;
         .skill{
           width: 90%;
           max-width: 90%;
           margin-bottom: 3rem;
+          margin-right: 0;
           &:last-child{
             margin-bottom: 0;
           }
@@ -159,9 +162,7 @@
       }
     }
   }
-  @include responsive(768px){
-    
-  }
+  @include responsive(768px){}
   @include responsive(600px){}
   @include responsive(480px){}
 }
@@ -235,6 +236,7 @@
 footer{
   background: $gray-color-800;
   @include flex(row, center, center)
+  
   img{
     width: 9.2rem;
     height: 9.2rem;
@@ -243,12 +245,13 @@ footer{
     font-size: 1.8rem;
     span{
       font-weight: 600;
+      a:link, a:visited{
+        color: black;
+      }
+      a:hover, a:active{
+        color: $green;
+      }
     }
-    a:link, a:visited{
-      color: black;
-    }
-    a:hover, a:active{
-      color: $green;
-    }
+    
   }
 }
