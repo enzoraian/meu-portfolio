@@ -39,30 +39,10 @@ header{
       .menu-mobile{
         display: block;
       }
-      #menu{
-        background-color: $gray-color-800;
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 0rem;
-        top: 10rem;
-        right: 0;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-        
-        li{
-          width: 100%;
-          text-align: center;
-          margin-top: 4rem;
-        }
-
-        transition: all ease 0.8s;
+      nav{
+        display: none;
       }
-      #nav.active #menu{
-        height: calc(100vh - 7rem);
-        visibility: visible;
-      }
+      
     }
   }
   @include responsive(600px){}
